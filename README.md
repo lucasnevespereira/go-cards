@@ -73,6 +73,28 @@ Create a new type of 'deck' which is a slice of strings
 type deck []string
 ```
 
+### Receiver Functions
+
+<b> d </b> is the copy of the actual "deck" we are working with. <br>
+<b> deck </b> just tells go that every variable of type "deck" can call this function on itself. <br>
+
+```
+func (d deck) print() {
+	for i, card := range d {
+		fmt.Println(i, card)
+	}
+}
+```
+
+Here any variable of type "deck" now has access to the print function
+
+So now if cards is of type deck <br>
+`cards := deck{"Ace of diamonds", newCard()}`
+
+We can call the function print <br>
+
+`cards.print()`
+
 ## Project Structure
 
 ```

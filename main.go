@@ -1,16 +1,12 @@
 // Reminder: Package main defines an executable output
 package main
 
-import "fmt"
-
 func main() {
 
 	cards := deck{"Ace of diamonds", newCard()}
 	cards = append(cards, "Six of Spades")
 
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	cards.print()
 
 }
 
