@@ -30,3 +30,22 @@ func newCard() string {
 	return "Five of Diamonds"
 }
 ```
+
+## Arrays vs Slices
+
+- Array: Fixed length list of things
+- Slice: An array that can grow or shrink
+
+Every Element in a <b>slice</b> must be of the same type
+
+## Declare Slices
+
+```
+	cards := []string{"Ace of diamonds", newCard()}
+```
+
+Appending/pushing new element to a slice
+
+```
+	cards = append(cards, "Six of Spades")
+```

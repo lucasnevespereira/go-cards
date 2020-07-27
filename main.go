@@ -10,9 +10,12 @@ func main() {
 	// card := "Ace of Spades" // go compilers will figure out that card is a string thanks to := operator, only when creating variable
 	// card = "Five of diamonds"
 
-	card := newCard()
+	// card := newCard()
 
-	fmt.Println(card)
+	cards := []string{"Ace of diamonds", newCard()}
+	cards = append(cards, "Six of Spades")
+
+	fmt.Println(cards)
 }
 
 func newCard() string {
