@@ -65,7 +65,16 @@ Iterating trough a slice
 <b>range cards</b> takes the slice of cards and loops over it.<br>
 <b>fmt.Println()</b> runs this for each card we are iterating.<br>
 
+### Declare Types
+
+Create a new type of 'deck' which is a slice of strings
+
+```
+type deck []string
+```
+
 ## Project Structure
+
 ```
 |
 |---main.go (code to create and manipulate deck)
