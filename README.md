@@ -1,6 +1,6 @@
 # go-cards
 
-## Declare Variables
+### Declare Variables
 
 ```
 var card string = "Ace of Spades"
@@ -23,7 +23,7 @@ Also we can declare it before assign it
   deckSize = 52
 ```
 
-## Declare Functions
+### Declare Functions
 
 ```
 func newCard() string {
@@ -31,14 +31,14 @@ func newCard() string {
 }
 ```
 
-## Arrays vs Slices
+### Arrays vs Slices
 
 - Array: Fixed length list of things
 - Slice: An array that can grow or shrink
 
 Every Element in a <b>slice</b> must be of the same type
 
-## Declare Slices
+### Declare Slices
 
 ```
 	cards := []string{"Ace of diamonds", newCard()}
@@ -50,7 +50,7 @@ Appending/pushing new element to a slice
 	cards = append(cards, "Six of Spades")
 ```
 
-## Declare Loops
+### Declare Loops
 
 Iterating trough a slice
 
@@ -64,3 +64,14 @@ Iterating trough a slice
 <b>card</b> is the current card we are iterating over.<br>
 <b>range cards</b> takes the slice of cards and loops over it.<br>
 <b>fmt.Println()</b> runs this for each card we are iterating.<br>
+
+## Project Structure
+```
+|
+|---main.go (code to create and manipulate deck)
+|
+|---deck.go (code that describes what a deck is and how it works)
+|
+|
+|---deck_test.go (code to automatically test the deck)
+```
