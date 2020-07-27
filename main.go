@@ -7,8 +7,14 @@ func main() {
 
 	// var card string = "Ace of Spades"
 	// or
-	card := "Ace of Spades" // go compilers will figure out that card is a string thanks to := operator, only when creating variable
-	card = "Five of diamonds"
+	// card := "Ace of Spades" // go compilers will figure out that card is a string thanks to := operator, only when creating variable
+	// card = "Five of diamonds"
+
+	card := newCard()
 
 	fmt.Println(card)
+}
+
+func newCard() string {
+	return "Five of Diamonds"
 }
