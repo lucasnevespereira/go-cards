@@ -106,3 +106,7 @@ We can call the function print <br>
 |
 |---deck_test.go (code to automatically test the deck)
 ```
+
+#### Tricks
+
+To run unused variables and avoid unused variable errors, use `_`
