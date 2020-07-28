@@ -5,6 +5,11 @@ func main() {
 
 	cards := newDeck()
 
-	cards.print()
+	// declareing 2 variables, cause we have 2 return values
+	hand, remainingCards := deal(cards, 5)
+
+	// They are type deck so they have access to print() that is a receiver func
+	hand.print()
+	remainingCards.print()
 
 }

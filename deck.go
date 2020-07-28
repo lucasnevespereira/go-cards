@@ -22,8 +22,14 @@ func newDeck() deck {
 	return cards
 }
 
+// Receiver function
 func (d deck) print() {
 	for i, card := range d {
 		fmt.Println(i, card)
 	}
+}
+
+// deal func with multiple returning values
+func deal(d deck, handSize int) (deck, deck) {
+	return d[:handSize], d[handSize:]
 }
