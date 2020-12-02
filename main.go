@@ -15,6 +15,7 @@ func main() {
 	// cards.saveToFile("my_cards.txt")
 
 	cards2 := newDeckFromFile("my_cards.txt")
+	cards2.shuffle()
 	cards2.print()
 
 }
