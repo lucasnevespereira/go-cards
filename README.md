@@ -110,3 +110,10 @@ We can call the function print <br>
 #### Tricks
 
 To run unused variables and avoid unused variable errors, use `_`
+
+### Testing in GO
+
+Go testing is different then Mocha/Jest and other testing frameworks. We have a very small set of functions to make our tests
+
+- To make a test, create a new file ending in `_test.go`
+- To run all tests in a package, run the command `go test`
